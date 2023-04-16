@@ -1,0 +1,506 @@
+XML :
+
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="CALCULATOR"
+        android:textSize="30dp"
+        android:id="@+id/tv"
+        android:textStyle="italic"
+        android:textColorHighlight="@color/black"
+        android:textColor="@color/yellow"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30dp"
+        android:id="@+id/et1"
+        android:hint=" "
+        android:textColor="@color/white"
+        android:layout_marginTop="240dp"
+        android:layout_marginBottom="25dp"/>
+    <TextView
+        android:layout_width="320dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et1"
+        android:id="@+id/tv1"
+        android:textColor="@color/white"
+        android:layout_marginBottom="25dp"
+        android:textSize="40dp"/>
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:text="AC"
+        android:backgroundTint="@color/black"
+        android:textColor="@color/orange"
+        android:onClick="clear"
+        android:textSize="30dp"
+        android:layout_toRightOf="@id/tv1"
+        android:layout_below="@id/et1"/>
+    <GridLayout
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_margin="5dp"
+        android:rowCount="4"
+        android:layout_below="@+id/tv1"
+        android:columnCount="4">
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="7"
+            android:textSize="50dp"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+
+            android:backgroundTint="@color/black"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bt7"
+            tools:ignore="DuplicateIds" />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="8"
+            android:textSize="50dp"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/black"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bt8"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:backgroundTint="@color/black"
+            android:text="9"
+            android:textSize="50dp"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bt9"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="*"
+            android:textSize="50dp"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+
+            android:backgroundTint="@color/black"
+            android:textColor="@color/orange"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/btp"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="4"
+            android:textSize="50dp"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:backgroundTint="@color/black"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bt4"
+            tools:ignore="DuplicateIds" />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="5"
+            android:textSize="50dp"
+            android:backgroundTint="@color/black"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bt5"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="6"
+            android:textSize="50dp"
+            android:backgroundTint="@color/black"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bt6"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="-"
+            android:textSize="70dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/orange"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bts"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="1"
+            android:textSize="50dp"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/black"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bt1"/>
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="2"
+            android:textSize="50dp"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:backgroundTint="@color/black"
+            android:layout_rowWeight="1"
+            android:id="@+id/bt2"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="3"
+            android:textSize="50dp"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/black"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bt3"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="+"
+            android:textSize="50dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/orange"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bta"
+            tools:ignore="DuplicateIds" />
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:src="@android:drawable/stat_notify_more"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/orange"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/btc"
+            tools:ignore="DuplicateIds" />
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="0"
+            android:textSize="50dp"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/black"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/bt0"
+            tools:ignore="DuplicateIds" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="/"
+            android:textSize="50dp"
+            android:layout_gravity="fill"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/orange"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/btd"
+            tools:ignore="DuplicateIds,InvalidId" />
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:text="="
+            android:textSize="50dp"
+            android:backgroundTint="@color/black"
+            android:textColor="@color/yellow"
+            android:layout_gravity="fill"
+            android:layout_margin="5dp"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:id="@+id/btv"
+            tools:ignore="DuplicateIds" />
+
+    </GridLayout>
+
+</RelativeLayout>
+
+
+JAVA CODE :
+
+package com.example.calculator;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+import android.annotation.SuppressLint;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ImageButton;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
+import  java.util.*;
+
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class MainActivity extends AppCompatActivity {
+    EditText et1;
+    TextView tv1;
+    ImageButton btc;
+    Button bt1,bt2,bt3,bt4,bt5,bt6,bt7,bt8,bt9,bt0,btp,bta,bts,btd,bte;
+    int num1,num2,result;
+
+    String s="/*+-";
+    ArrayList<String> ar=new ArrayList<>();
+    @SuppressLint("MissingInflatedId")
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+            et1=findViewById(R.id.et1);
+            tv1=findViewById(R.id.tv1);
+            bt0=findViewById(R.id.bt0);
+            bt1=findViewById(R.id.bt1);
+            bt2=findViewById(R.id.bt2);
+            bt3=findViewById(R.id.bt3);
+            bt4=findViewById(R.id.bt4);
+            bt5=findViewById(R.id.bt5);
+            bt6=findViewById(R.id.bt6);
+            bt7=findViewById(R.id.bt7);
+            bt8=findViewById(R.id.bt8);
+            bt9=findViewById(R.id.bt9);
+            bta=findViewById(R.id.bta);
+            bts=findViewById(R.id.bts);
+            btd=findViewById(R.id.btd);
+            btp=findViewById(R.id.btp);
+            btc=findViewById(R.id.btc);
+            bte=findViewById(R.id.btv);
+
+        et1.setText("");
+        bt0.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("0");
+            }
+        });
+        bt1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("1");
+            }
+        });
+        bt2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("2");
+            }
+        });
+        bt3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("3");
+            }
+        });
+        bt4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("4");
+            }
+        });
+        bt5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("5");
+            }
+        });
+        bt6.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("6");
+            }
+        });
+        bt7.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("7");
+            }
+        });
+        bt8.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("8");
+            }
+        });
+        bt9.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("9");
+            }
+        });
+        btc.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                    String s=et1.getText().toString();
+                    et1.setText("");
+                    et1.setText(s.substring(0,s.length()-1));
+              }
+        });
+        btd.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("/");
+            }
+        });
+        btp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("*");
+            }
+        });
+        bts.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("-");
+            }
+        });
+        bta.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                et1.append("+");
+            }
+        });
+
+        bte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                postfix(et1.getText().toString());
+                evaluate(ar);
+            }
+        });
+    }
+     void postfix(String str)
+    {
+        String s="+-*/";
+        int num=0,n=str.length();
+        Stack<Character> stk=new Stack<>();
+        for(int i=0;i<str.length();i++)
+        {
+            if(s.indexOf(str.charAt(i))==-1)
+            {
+                num=num*10+Character.getNumericValue(str.charAt(i));
+                if(i==n-1)
+                    pushlist(String.valueOf(num));
+                else if(s.indexOf(str.charAt(i+1))!=-1)
+                {
+                    pushlist( String.valueOf(num));
+                    num=0;
+                }
+                else
+                    continue;
+            }
+            else
+            {
+                int b,a=priority(str.charAt(i));
+                b=stk.empty()?a+1:priority(stk.peek());
+                if(a<b)
+                    stk.push(str.charAt(i));
+                else
+                {
+                    while(a>=b)
+                    {
+                        pushlist(Character.toString(stk.pop()));
+                        b=stk.empty()?a+1:priority(stk.peek());
+                    }
+                    stk.push(str.charAt(i));
+                }
+            }
+        }
+        while(!stk.empty())
+        {
+            pushlist(Character.toString(stk.pop()));
+        }
+    }
+     int priority(char c)
+    {
+        switch(c)
+        {
+            case '-':
+            case '+':return 2;
+            case '*':
+            case '/':return 1;
+        }
+        return 3;
+    }
+     void pushlist(String str)
+    {
+        ar.add(str);
+    }
+     void evaluate(ArrayList<String> ar)
+    {
+        String s="+-*/";
+        Stack<Integer> stk=new Stack<>();
+        for(String i:ar)
+        {
+            if(s.indexOf(i)==-1)
+                stk.push(Integer.valueOf(i));
+            else
+            {
+                int b=stk.pop();
+                int a=stk.pop();
+                switch(i)
+                {
+                    case "+":stk.push(a+b);break;
+                    case "-":stk.push(a-b);break;
+                    case "*":stk.push(a*b);break;
+                    case "/":stk.push(a/b);break;
+                }
+            }
+        }tv1.setText(String.valueOf(stk.peek()));
+    }
+
+    public void clear(View view) {
+        et1.setText("");
+        tv1.setText("");
+    }
+}
